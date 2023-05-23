@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<HTML lang="en-US">
+<head>
+<meta charset = "utf-8"/>
+<title>Machine learning workshop</title>
+<link rel = "stylesheet" href = "C:/Users/NikhilDayma/OneDrive - NTT Data Payment Services Limited/HTML/learning.css"/>
+<link rel = "icon" type = "image/png" href = "C:/Users/NikhilDayma/OneDrive - NTT Data Payment Services Limited/HTML/download.png">
+<meta name="viewport" content="width=device-width" />
+<meta name = "description" content = "register for machine learning"/>
+<meta name="theme-color" content="#4285f4" />
+</head>
+<body>
+<ul>
+<li>We use <strong>!DOCTYPE html</strong> as first element in the HTML page so that the rendering is done using standard mode rather than quirk mode.
+<li>The document metadata, including the document title, character set, viewport settings, description, base URL, stylesheet links, and icons, are found in the &lt head &gt element.
+<li>In the header there are various meta attributes
+<ol>
+<li>Charset: Assign "UTF-8" as value to it
+<li>name and content: in name assign viewport and content "width = device-width". This aspect makes page responsive by providing width value as device width which implies that based on the device on which page is opened the display of the content will be adjusted accordingly.
+</ol>
+<li>Void elements are those elements in HTML which do not have closing tag rather have a slash at the end of the tag. eg: &lt input type = "range"/&gt. Thr LI tags consist of br - break, col, embed,hr, input, link , meta, source, track and wbr
+<li>When it comes to using link tag to associate html with other source, a attribute rel is available. It defines the relation between html file and the new file referred in href. There are 25 rel types.https://html.spec.whatwg.org/multipage/links.html#linkTypes.
+<li>Favicon is the small icon that one sees in the tab opened in browser. For instance k for kaggle. In case of favicon, you define rel as icon and in href the image addressed is provided defining type as imsge
+<li>In scenarios where we have web page in multiple languages, then in that scenario the alternate language page needs to be displayed. for the same, we need to set rel as alternate and hreflang is language into which it will be converted. The examples of the hreflang is fr-FR and pt-BR. Also, the href will have the link to page with converted content.
+<li>In HTML link, the rel attribute is assigned value canonical in case you want to search engine know that the source is authoritative. Canonical value should be assigned to all the translated webpages and your home page as well. Need to explore more.
+<li>Script tag is used to store the script and it is necessary that the script is stored at the end of the page as it may impact rendering. It is recommended that after providing script source, we need to add defer which will initially download script file but execute it once the HTML page is rendered. &lt script src=" js/switch.js " defer &gt &lt /script &gt
+<li>HTML comments are written in format &lt!-- and --> Anything between these two thing is considered as comment.
+<li>Meta tags
+<ol id="Meta_1">
+<li>http-equiv: This meta type has attribute http-equiv and content. Content is necessary attribute. The value assigned to http-equiv and content determines how the page is going to be rendered. In case of http-equiv being set to refresh and content 60 implies page gets auto refreshed in 60 seconds. The most common used is &lt meta http-equiv="content-security-policy" content="default-src https:" /&gt. content-security-policy determines the permitted server origin and script end points.
+<li>Name attribute: The other type of attribute is "name" attribute which has values viewport,description and theme-color. It also needs to have content as attribute along with the name attribute.
+<ul>
+<li> The name attribute in meta tag can carry description as value. The syntax for the same is &lt meta name="description" content="register for learning" /&gt. The description value of attribute determines your rank in SEO. It should be short and precise description of the page.
+<li>Robots is another name attribute which states bots to not index the site and follow any links
+<li>The theme-color attribute determines the browser color at the place where url is written.
+</ul>
+<li>open graph protocol: The another attribute used in header is og attribute. This attribute determines what content to be displayed when the website is referred on other social networking sites. more about it can be read on https://ogp.me/. <br>&ltmeta property="og:title" content="Machine Learning Workshop" /&gt<br>
+&ltmeta property="og:description" content="School for Machines Who Can't Learn Good and Want to Do Other Stuff Good Too" /&gt<br>
+&ltmeta property="og:image" content="http://www.machinelearningworkshop.com/image/all.png" /&gt<br>
+&ltmeta property="og:image:alt" content="Black and white line drawing of refrigerator, french door refrigerator, range, washer, fan, microwave, vaccuum, space heater and air conditioner" /&gt
+<li>&ltmeta name="apple-mobile-web-app-capable" content="yes" /&gt <br> &ltmeta name="mobile-web-app-capable" content="yes" /&gt .In this meta tag when we pass the content type to yes will  result the application will run in full screen mode, without the address bar at the top and the navigation bar at the bottom. In case of no, the address bar and navigation bar will shown.
+<li>Semantic tags like role, help SEO in searching of webpages.The other two semantics are &lt nav &gt and &lt header &gt. Header may be for a main, article or a section. when header is nested in main, article or session, it becomes header of the same.
+<li>Websites have different layout. One such layout is known as holy grail layout. This consists of header, footer, two side bars and content. The body of page should consist of following elements.<br>
+&ltbody&gt<br>
+  &ltheader&gtHeader&lt/header&gt <br>
+  &ltnav&gtNav&lt/nav&gt <br>
+  &ltmain&gt<br>
+    &ltarticle&gtFirst post&lt/article&gt <br>
+    &ltarticle&gtSecond post&lt/article&gt <br>
+  &lt/main&gt<br>
+  &ltaside&gt Aside&lt/aside&gt<br>
+  &ltfooter&gt Footer&lt/footer&gt<br>
+&lt/body&gt<br>
+</ol>
+<ol id = "Attributes_1">
+<li>Attributes are the characteristics associated with the tags. It can be of type like boolean, Enum or global.Global are those attributes applicable across all variables.<br>
+Below are few of global attributes<br>
+<ul>
+<li>id: Id attribute helps you assign unique value to a tag and that value is used to refer the element in CSS or JS.
+<li>Link fragment identifier: When it comes to link fragment identifier, it is "href" attribute. Usually it is assigned to &lt a &gt. It is used to define a placeholder for hyperlink.<br> When we use #&lt var name &gt as a value to HTML. for eg: below tag will refer to posn of order list associated with Meta tag<br>
+<a href = #Meta_1>Meta</a>
+</ul>
+
+<br>
+https://developer.chrome.com/docs/devtools/open/<br>
+https://developer.chrome.com/tags/devtools-engineering/<br>
+https://web.dev/learn/html/semantic-html/<br>
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API<br>
+https://web.dev/learn/css/<br>
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+</ol>
+
+</ul>
+</body>
+</HTML>
+<style>
+
+
+</style>
