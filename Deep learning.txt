@@ -1,0 +1,2 @@
+There are two types of Large language models: Base LLM and Instruction tuned LLM. The base LLM operates such that it suggests you what could be the next content to the content you wrote. You encounter the same in google docs or MS word or email where you write something and the system suggests you what you could write next.
+On the contrary instruction tuned LLM operates on reinforced learning with human feedback(RLHF), which gives you output based on the input you provide. This is usually the model which is being studies and been consumed by most of the applications.
